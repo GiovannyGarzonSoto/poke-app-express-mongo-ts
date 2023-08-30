@@ -1,0 +1,16 @@
+version: "3"
+
+services: 
+  apirest:  
+    container_name: poke-api
+    restart: always
+    build: .
+    ports: 
+      - "3666:3666"
+    # links:
+    #   - mongo
+  # database-mongo: 
+  #   container_name: manga-mongo
+  #   image: mongo
+  #   ports: 
+  #     - "27018:27017"
