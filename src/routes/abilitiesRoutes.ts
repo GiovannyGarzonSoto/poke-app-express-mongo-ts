@@ -9,6 +9,8 @@ router.get('/:id', abilitiesController.getOne)
 
 router.post('/', abilitiesController.add)
 
+router.put('/update/:id', abilitiesController.update)
+
 router.put('/delete/:id', abilitiesController.delete)
 
 export default router
